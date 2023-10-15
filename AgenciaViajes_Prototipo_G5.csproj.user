@@ -2,6 +2,9 @@
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup />
   <ItemGroup>
+    <Compile Update="ArmadoItinerario.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="ConfirmacionItinerario.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -14,7 +17,43 @@
     <Compile Update="ConfirmacionReservas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="GeneracionPreReserva.cs">
+    <Compile Update="ElegirAdicionalesPaqueteTuristico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="GeneracionPreReservaAdulto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="GeneracionPreReservaInfante.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="GeneracionPreReservaPersonas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="GeneracionPreReservaMenor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="GuardarOpcion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="HabitacionesDisponibles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ItinerarioCreado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ItinerarioModificado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ListadoItinerario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ListadoOfertaCrucero.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ListadoOfertaHoteleria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="OtroItinerario.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="PreReserva.cs">
@@ -26,10 +65,40 @@
     <Compile Update="ListadoVuelosDisponibles.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="ServicioExtraHotel.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="ServiciosExtraVuelos.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="VerActividadesPaqueteTuristico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="VerInformacionTarifaVuelos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="VerPaqueteTuristico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="VerParadasCrucero.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="VerParadasVuelos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="VerTarifa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="VerTarifasPaquetesTuristicos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="VisualizarImpuestoPaqueteTuristico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="VisualizarImpuestosCrucero.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="VisualizarImpuestosHotel.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>

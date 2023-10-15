@@ -27,5 +27,10 @@ namespace AgenciaViajes_Prototipo_G5
             ConsultaEstadoReserva formConsultaEstadoReserva = new ConsultaEstadoReserva();
             formConsultaEstadoReserva.Show();
         }
+
+        private void buttonVolverAtras_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

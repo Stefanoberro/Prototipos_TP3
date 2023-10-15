@@ -29,5 +29,10 @@ namespace AgenciaViajes_Prototipo_G5
         {
             this.Close();
         }
+
+        private void buttonConfItinerario_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

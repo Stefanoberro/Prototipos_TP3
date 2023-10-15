@@ -97,7 +97,7 @@
             listView1.Items.AddRange(new ListViewItem[] { listViewItem1 });
             listView1.Location = new Point(61, 175);
             listView1.Name = "listView1";
-            listView1.Size = new Size(87, 44);
+            listView1.Size = new Size(119, 44);
             listView1.TabIndex = 5;
             listView1.UseCompatibleStateImageBehavior = false;
             listView1.SelectedIndexChanged += listView1_SelectedIndexChanged;
@@ -105,7 +105,7 @@
             // listView2
             // 
             listView2.Items.AddRange(new ListViewItem[] { listViewItem2 });
-            listView2.Location = new Point(278, 175);
+            listView2.Location = new Point(323, 175);
             listView2.Name = "listView2";
             listView2.Size = new Size(121, 44);
             listView2.TabIndex = 6;
@@ -139,6 +139,7 @@
             button3.TabIndex = 9;
             button3.Text = "Ver Informacion Tarifa";
             button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
             // 
             // label5
             // 
@@ -175,6 +176,7 @@
             button5.TabIndex = 13;
             button5.Text = "Guardar Opcion Seleccionada";
             button5.UseVisualStyleBackColor = true;
+            button5.Click += button5_Click;
             // 
             // ListadoVuelosDisponibles
             // 

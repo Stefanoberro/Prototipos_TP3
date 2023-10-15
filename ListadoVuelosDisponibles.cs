@@ -41,7 +41,19 @@ namespace AgenciaViajes_Prototipo_G5
 
         private void button4_Click(object sender, EventArgs e)
         {
-            Close();
+            this.Close();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            VerInformacionTarifaVuelos tarifaVuelos = new VerInformacionTarifaVuelos();
+            tarifaVuelos.Show();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            GuardarOpcion guardarOpcion = new GuardarOpcion();
+            guardarOpcion.Show();
         }
     }
 }

@@ -38,5 +38,16 @@ namespace AgenciaViajes_Prototipo_G5
             ListadoVuelosDisponibles formListadoVuelosDisponibles = new ListadoVuelosDisponibles();
             formListadoVuelosDisponibles.Show();
         }
+
+        private void buttonVerPaquetesTuristicos_Click(object sender, EventArgs e)
+        {
+            VerPaqueteTuristico verPaqueteTuristico = new VerPaqueteTuristico();
+            verPaqueteTuristico.Show();
+        }
+
+        private void buttonBackMenu_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

@@ -39,9 +39,10 @@
             // listView1
             // 
             listView1.Columns.AddRange(new ColumnHeader[] { NumeroPrePreserva, NombreCliente, FechaPreReserva });
-            listView1.Location = new Point(91, 61);
+            listView1.Location = new Point(64, 37);
+            listView1.Margin = new Padding(2, 2, 2, 2);
             listView1.Name = "listView1";
-            listView1.Size = new Size(556, 207);
+            listView1.Size = new Size(544, 126);
             listView1.TabIndex = 0;
             listView1.UseCompatibleStateImageBehavior = false;
             listView1.View = View.Details;
@@ -63,18 +64,20 @@
             // 
             // buttonConfirmarPreReserva
             // 
-            buttonConfirmarPreReserva.Location = new Point(123, 333);
+            buttonConfirmarPreReserva.Location = new Point(148, 200);
+            buttonConfirmarPreReserva.Margin = new Padding(2, 2, 2, 2);
             buttonConfirmarPreReserva.Name = "buttonConfirmarPreReserva";
-            buttonConfirmarPreReserva.Size = new Size(175, 76);
+            buttonConfirmarPreReserva.Size = new Size(122, 46);
             buttonConfirmarPreReserva.TabIndex = 1;
             buttonConfirmarPreReserva.Text = "Confirmar Pre Reserva";
             buttonConfirmarPreReserva.UseVisualStyleBackColor = true;
             // 
             // buttonVolverAtras
             // 
-            buttonVolverAtras.Location = new Point(424, 333);
+            buttonVolverAtras.Location = new Point(399, 200);
+            buttonVolverAtras.Margin = new Padding(2, 2, 2, 2);
             buttonVolverAtras.Name = "buttonVolverAtras";
-            buttonVolverAtras.Size = new Size(175, 76);
+            buttonVolverAtras.Size = new Size(122, 46);
             buttonVolverAtras.TabIndex = 2;
             buttonVolverAtras.Text = "Volver Atrás";
             buttonVolverAtras.UseVisualStyleBackColor = true;
@@ -82,12 +85,13 @@
             // 
             // ConfirmacionReservas
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(650, 270);
             Controls.Add(buttonVolverAtras);
             Controls.Add(buttonConfirmarPreReserva);
             Controls.Add(listView1);
+            Margin = new Padding(2, 2, 2, 2);
             Name = "ConfirmacionReservas";
             Text = "Confirmación de Reservas";
             ResumeLayout(false);

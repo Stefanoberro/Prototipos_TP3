@@ -41,17 +41,19 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(31, 27);
+            label1.Location = new Point(22, 16);
+            label1.Margin = new Padding(2, 0, 2, 0);
             label1.Name = "label1";
-            label1.Size = new Size(260, 25);
+            label1.Size = new Size(173, 15);
             label1.TabIndex = 0;
             label1.Text = "Seleccione una de las opciones:";
             // 
             // buttonConsultaDeDisponibilidad
             // 
-            buttonConsultaDeDisponibilidad.Location = new Point(103, 75);
+            buttonConsultaDeDisponibilidad.Location = new Point(72, 45);
+            buttonConsultaDeDisponibilidad.Margin = new Padding(2);
             buttonConsultaDeDisponibilidad.Name = "buttonConsultaDeDisponibilidad";
-            buttonConsultaDeDisponibilidad.Size = new Size(206, 62);
+            buttonConsultaDeDisponibilidad.Size = new Size(248, 37);
             buttonConsultaDeDisponibilidad.TabIndex = 1;
             buttonConsultaDeDisponibilidad.Text = "Consulta de Disponibilidad de Productos";
             buttonConsultaDeDisponibilidad.UseVisualStyleBackColor = true;
@@ -59,18 +61,21 @@
             // 
             // button2
             // 
-            button2.Location = new Point(103, 142);
+            button2.Location = new Point(72, 85);
+            button2.Margin = new Padding(2);
             button2.Name = "button2";
-            button2.Size = new Size(206, 62);
+            button2.Size = new Size(248, 37);
             button2.TabIndex = 2;
-            button2.Text = "Armado Itinerarios / Presupuestos";
+            button2.Text = "Itinerarios / Presupuestos";
             button2.UseVisualStyleBackColor = true;
+            button2.Click += buttonGeneracionPreReserva_Click;
             // 
             // buttonGeneracionPreReserva
             // 
-            buttonGeneracionPreReserva.Location = new Point(103, 208);
+            buttonGeneracionPreReserva.Location = new Point(72, 125);
+            buttonGeneracionPreReserva.Margin = new Padding(2);
             buttonGeneracionPreReserva.Name = "buttonGeneracionPreReserva";
-            buttonGeneracionPreReserva.Size = new Size(206, 62);
+            buttonGeneracionPreReserva.Size = new Size(248, 37);
             buttonGeneracionPreReserva.TabIndex = 3;
             buttonGeneracionPreReserva.Text = "Generación de Pre Reserva";
             buttonGeneracionPreReserva.UseVisualStyleBackColor = true;
@@ -78,9 +83,10 @@
             // 
             // buttonConfirmacionReserva
             // 
-            buttonConfirmacionReserva.Location = new Point(103, 277);
+            buttonConfirmacionReserva.Location = new Point(72, 166);
+            buttonConfirmacionReserva.Margin = new Padding(2);
             buttonConfirmacionReserva.Name = "buttonConfirmacionReserva";
-            buttonConfirmacionReserva.Size = new Size(206, 62);
+            buttonConfirmacionReserva.Size = new Size(248, 37);
             buttonConfirmacionReserva.TabIndex = 4;
             buttonConfirmacionReserva.Text = "Confirmación de Reservas";
             buttonConfirmacionReserva.UseVisualStyleBackColor = true;
@@ -88,9 +94,10 @@
             // 
             // buttonConsultaEstadoReserva
             // 
-            buttonConsultaEstadoReserva.Location = new Point(103, 343);
+            buttonConsultaEstadoReserva.Location = new Point(72, 206);
+            buttonConsultaEstadoReserva.Margin = new Padding(2);
             buttonConsultaEstadoReserva.Name = "buttonConsultaEstadoReserva";
-            buttonConsultaEstadoReserva.Size = new Size(206, 62);
+            buttonConsultaEstadoReserva.Size = new Size(248, 37);
             buttonConsultaEstadoReserva.TabIndex = 5;
             buttonConsultaEstadoReserva.Text = "Consultar Estado de Reservas";
             buttonConsultaEstadoReserva.UseVisualStyleBackColor = true;
@@ -98,18 +105,21 @@
             // 
             // button6
             // 
-            button6.Location = new Point(569, 411);
+            button6.Location = new Point(129, 305);
+            button6.Margin = new Padding(2);
             button6.Name = "button6";
-            button6.Size = new Size(206, 62);
+            button6.Size = new Size(144, 37);
             button6.TabIndex = 6;
             button6.Text = "Salir";
             button6.UseVisualStyleBackColor = true;
+            button6.Click += button6_Click;
             // 
             // buttonConfirmacionItinerario
             // 
-            buttonConfirmacionItinerario.Location = new Point(103, 411);
+            buttonConfirmacionItinerario.Location = new Point(72, 247);
+            buttonConfirmacionItinerario.Margin = new Padding(2);
             buttonConfirmacionItinerario.Name = "buttonConfirmacionItinerario";
-            buttonConfirmacionItinerario.Size = new Size(206, 62);
+            buttonConfirmacionItinerario.Size = new Size(248, 37);
             buttonConfirmacionItinerario.TabIndex = 7;
             buttonConfirmacionItinerario.Text = "Confirmación Itinerario";
             buttonConfirmacionItinerario.UseVisualStyleBackColor = true;
@@ -117,9 +127,9 @@
             // 
             // FormMenuPpal
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(884, 527);
+            ClientSize = new Size(383, 407);
             Controls.Add(buttonConfirmacionItinerario);
             Controls.Add(button6);
             Controls.Add(buttonConsultaEstadoReserva);
@@ -128,6 +138,7 @@
             Controls.Add(button2);
             Controls.Add(buttonConsultaDeDisponibilidad);
             Controls.Add(label1);
+            Margin = new Padding(2);
             Name = "FormMenuPpal";
             Text = "Menú Principal";
             Load += FormMenuPpal_Load;

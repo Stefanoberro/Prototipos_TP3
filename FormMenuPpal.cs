@@ -34,8 +34,8 @@ namespace AgenciaViajes_Prototipo_G5
 
         private void buttonGeneracionPreReserva_Click(object sender, EventArgs e)
         {
-            GeneracionPreReserva formGeneracionPreReserva= new GeneracionPreReserva();
-            formGeneracionPreReserva.Show();
+            ListadoItinerario formListadoItinerario = new ListadoItinerario();
+            formListadoItinerario.Show();
         }
 
         private void FormMenuPpal_Load(object sender, EventArgs e)
@@ -43,6 +43,9 @@ namespace AgenciaViajes_Prototipo_G5
 
         }
 
-        
+        private void button6_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

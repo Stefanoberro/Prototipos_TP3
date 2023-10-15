@@ -19,7 +19,7 @@ namespace AgenciaViajes_Prototipo_G5
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Close();
+            this.Close();
         }
     }
 }

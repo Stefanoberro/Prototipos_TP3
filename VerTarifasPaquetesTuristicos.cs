@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace AgenciaViajes_Prototipo_G5
 {
-    public partial class FormGeneracionPreReserva : Form
+    public partial class VerTarifasPaquetesTuristicos : Form
     {
-        public FormGeneracionPreReserva()
+        public VerTarifasPaquetesTuristicos()
         {
             InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
