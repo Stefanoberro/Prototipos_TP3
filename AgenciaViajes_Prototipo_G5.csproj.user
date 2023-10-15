@@ -14,7 +14,7 @@
     <Compile Update="ConfirmacionReservas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="GneracionPreReserva.cs">
+    <Compile Update="GeneracionPreReserva.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="PreReserva.cs">

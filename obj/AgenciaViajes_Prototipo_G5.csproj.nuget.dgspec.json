@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Myrna\\Desktop\\AgenciaViajes_Prototipo_G5\\AgenciaViajes_Prototipo_G5.csproj": {}
+    "C:\\Users\\Myrna\\Desktop\\Nueva carpeta\\AgenciaViajes_Prototipo_G5.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Myrna\\Desktop\\AgenciaViajes_Prototipo_G5\\AgenciaViajes_Prototipo_G5.csproj": {
+    "C:\\Users\\Myrna\\Desktop\\Nueva carpeta\\AgenciaViajes_Prototipo_G5.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Myrna\\Desktop\\AgenciaViajes_Prototipo_G5\\AgenciaViajes_Prototipo_G5.csproj",
+        "projectUniqueName": "C:\\Users\\Myrna\\Desktop\\Nueva carpeta\\AgenciaViajes_Prototipo_G5.csproj",
         "projectName": "AgenciaViajes_Prototipo_G5",
-        "projectPath": "C:\\Users\\Myrna\\Desktop\\AgenciaViajes_Prototipo_G5\\AgenciaViajes_Prototipo_G5.csproj",
+        "projectPath": "C:\\Users\\Myrna\\Desktop\\Nueva carpeta\\AgenciaViajes_Prototipo_G5.csproj",
         "packagesPath": "C:\\Users\\Myrna\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Myrna\\Desktop\\AgenciaViajes_Prototipo_G5\\obj\\",
+        "outputPath": "C:\\Users\\Myrna\\Desktop\\Nueva carpeta\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Myrna\\AppData\\Roaming\\NuGet\\NuGet.Config",
