@@ -21,5 +21,15 @@ namespace AgenciaViajes_Prototipo_G5
         {
             this.Close();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            var result = MessageBox.Show("¿Está seguro que desea agregar este servicio?", "Confirmación", MessageBoxButtons.YesNo);
+            if (result == DialogResult.Yes)
+            {
+                MessageBox.Show("Servicio agregado exitosamente", "Servicio agregado", MessageBoxButtons.OK);
+                Close();
+            }
+        }
     }
 }

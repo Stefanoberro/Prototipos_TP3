@@ -1,4 +1,6 @@
-﻿namespace AgenciaViajes_Prototipo_G5
+﻿using System.Windows.Forms;
+
+namespace AgenciaViajes_Prototipo_G5
 {
     partial class VerParadasVuelos
     {
@@ -30,8 +32,8 @@
         {
             label1 = new Label();
             label2 = new Label();
-            listView1 = new ListView();
             button1 = new Button();
+            listBox1 = new ListBox();
             SuspendLayout();
             // 
             // label1
@@ -52,14 +54,6 @@
             label2.TabIndex = 1;
             label2.Text = "Codigo      ||        Aeropuerto        ||         Tiempo de Parada         ||";
             // 
-            // listView1
-            // 
-            listView1.Location = new Point(28, 105);
-            listView1.Name = "listView1";
-            listView1.Size = new Size(435, 75);
-            listView1.TabIndex = 2;
-            listView1.UseCompatibleStateImageBehavior = false;
-            // 
             // button1
             // 
             button1.Location = new Point(28, 220);
@@ -70,13 +64,23 @@
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
+            // listBox1
+            // 
+            listBox1.FormattingEnabled = true;
+            listBox1.Items.AddRange(new object[] { "A012 || San Luis || 1hs" });
+            listBox1.ItemHeight = 15;
+            listBox1.Location = new Point(28, 116);
+            listBox1.Name = "listBox1";
+            listBox1.Size = new Size(346, 79);
+            listBox1.TabIndex = 4;
+            // 
             // VerParadasVuelos
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(495, 318);
+            Controls.Add(listBox1);
             Controls.Add(button1);
-            Controls.Add(listView1);
             Controls.Add(label2);
             Controls.Add(label1);
             Name = "VerParadasVuelos";
@@ -89,7 +93,7 @@
 
         private Label label1;
         private Label label2;
-        private ListView listView1;
         private Button button1;
+        private ListBox listBox1;
     }
 }

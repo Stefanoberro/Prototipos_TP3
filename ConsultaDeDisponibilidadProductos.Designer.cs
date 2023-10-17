@@ -45,10 +45,8 @@
             comboBox4 = new ComboBox();
             comboBox5 = new ComboBox();
             label15 = new Label();
-            comboBox8 = new ComboBox();
-            button1 = new Button();
             button2 = new Button();
-            seleccionarButton = new Button();
+            hotelesButton = new Button();
             comboBox2 = new ComboBox();
             comboBox3 = new ComboBox();
             dateTimePicker1 = new DateTimePicker();
@@ -56,6 +54,7 @@
             comboBox7 = new ComboBox();
             label13 = new Label();
             label14 = new Label();
+            vuelosButton = new Button();
             SuspendLayout();
             // 
             // label1
@@ -97,7 +96,7 @@
             // comboBox1
             // 
             comboBox1.FormattingEnabled = true;
-            comboBox1.Items.AddRange(new object[] { "1" });
+            comboBox1.Items.AddRange(new object[] { "1", "2", "3" });
             comboBox1.Location = new Point(109, 66);
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new Size(46, 23);
@@ -201,11 +200,12 @@
             // comboBox5
             // 
             comboBox5.FormattingEnabled = true;
-            comboBox5.Items.AddRange(new object[] { "Colombia" });
+            comboBox5.Items.AddRange(new object[] { "Buenos Aires" });
             comboBox5.Location = new Point(110, 308);
             comboBox5.Name = "comboBox5";
             comboBox5.Size = new Size(113, 23);
             comboBox5.TabIndex = 20;
+            comboBox5.SelectedIndexChanged += comboBox5_SelectedIndexChanged;
             // 
             // label15
             // 
@@ -215,25 +215,6 @@
             label15.Size = new Size(90, 15);
             label15.TabIndex = 23;
             label15.Text = "Tipo de Servicio";
-            // 
-            // comboBox8
-            // 
-            comboBox8.FormattingEnabled = true;
-            comboBox8.Items.AddRange(new object[] { "Vuelo" });
-            comboBox8.Location = new Point(55, 393);
-            comboBox8.Name = "comboBox8";
-            comboBox8.Size = new Size(113, 23);
-            comboBox8.TabIndex = 24;
-            // 
-            // button1
-            // 
-            button1.Location = new Point(586, 48);
-            button1.Name = "button1";
-            button1.Size = new Size(112, 79);
-            button1.TabIndex = 25;
-            button1.Text = "Ver Paquete Turistico";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += buttonVerPaquetesTuristicos_Click;
             // 
             // button2
             // 
@@ -245,20 +226,20 @@
             button2.UseVisualStyleBackColor = true;
             button2.Click += buttonBackMenu_Click;
             // 
-            // seleccionarButton
+            // hotelesButton
             // 
-            seleccionarButton.Location = new Point(226, 384);
-            seleccionarButton.Name = "seleccionarButton";
-            seleccionarButton.Size = new Size(163, 38);
-            seleccionarButton.TabIndex = 27;
-            seleccionarButton.Text = "Seleccionar";
-            seleccionarButton.UseVisualStyleBackColor = true;
-            seleccionarButton.Click += seleccionarButton_Click;
+            hotelesButton.Location = new Point(80, 384);
+            hotelesButton.Name = "hotelesButton";
+            hotelesButton.Size = new Size(163, 38);
+            hotelesButton.TabIndex = 27;
+            hotelesButton.Text = "Hoteles";
+            hotelesButton.UseVisualStyleBackColor = true;
+            hotelesButton.Click += hotelesButton_Click;
             // 
             // comboBox2
             // 
             comboBox2.FormattingEnabled = true;
-            comboBox2.Items.AddRange(new object[] { "1" });
+            comboBox2.Items.AddRange(new object[] { "1", "2", "3" });
             comboBox2.Location = new Point(229, 66);
             comboBox2.Name = "comboBox2";
             comboBox2.Size = new Size(46, 23);
@@ -267,7 +248,7 @@
             // comboBox3
             // 
             comboBox3.FormattingEnabled = true;
-            comboBox3.Items.AddRange(new object[] { "1" });
+            comboBox3.Items.AddRange(new object[] { "1", "2", "3" });
             comboBox3.Location = new Point(343, 66);
             comboBox3.Name = "comboBox3";
             comboBox3.Size = new Size(46, 23);
@@ -287,7 +268,7 @@
             // comboBox6
             // 
             comboBox6.FormattingEnabled = true;
-            comboBox6.Items.AddRange(new object[] { "Colombia" });
+            comboBox6.Items.AddRange(new object[] { "Mendoza" });
             comboBox6.Location = new Point(343, 308);
             comboBox6.Name = "comboBox6";
             comboBox6.Size = new Size(113, 23);
@@ -320,11 +301,22 @@
             label14.TabIndex = 31;
             label14.Text = "Pais";
             // 
+            // vuelosButton
+            // 
+            vuelosButton.Location = new Point(270, 384);
+            vuelosButton.Name = "vuelosButton";
+            vuelosButton.Size = new Size(163, 38);
+            vuelosButton.TabIndex = 36;
+            vuelosButton.Text = "Vuelos";
+            vuelosButton.UseVisualStyleBackColor = true;
+            vuelosButton.Click += vuelosButton_Click;
+            // 
             // ConsultaDeDisponibilidadProductos
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(749, 463);
+            Controls.Add(vuelosButton);
             Controls.Add(comboBox6);
             Controls.Add(comboBox7);
             Controls.Add(label13);
@@ -332,10 +324,8 @@
             Controls.Add(dateTimePicker1);
             Controls.Add(comboBox3);
             Controls.Add(comboBox2);
-            Controls.Add(seleccionarButton);
+            Controls.Add(hotelesButton);
             Controls.Add(button2);
-            Controls.Add(button1);
-            Controls.Add(comboBox8);
             Controls.Add(label15);
             Controls.Add(comboBox5);
             Controls.Add(comboBox4);
@@ -378,10 +368,8 @@
         private ComboBox comboBox4;
         private ComboBox comboBox5;
         private Label label15;
-        private ComboBox comboBox8;
-        private Button button1;
         private Button button2;
-        private Button seleccionarButton;
+        private Button hotelesButton;
         private ComboBox comboBox2;
         private ComboBox comboBox3;
         private DateTimePicker dateTimePicker1;
@@ -389,5 +377,6 @@
         private ComboBox comboBox7;
         private Label label13;
         private Label label14;
+        private Button vuelosButton;
     }
 }

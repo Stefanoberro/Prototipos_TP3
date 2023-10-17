@@ -45,18 +45,6 @@
             columnHeader6 = new ColumnHeader();
             columnHeader7 = new ColumnHeader();
             columnHeader8 = new ColumnHeader();
-            groupBoxServCruc = new GroupBox();
-            listView2 = new ListView();
-            columnHeader9 = new ColumnHeader();
-            columnHeader10 = new ColumnHeader();
-            columnHeader11 = new ColumnHeader();
-            columnHeader12 = new ColumnHeader();
-            columnHeader13 = new ColumnHeader();
-            columnHeader14 = new ColumnHeader();
-            columnHeader16 = new ColumnHeader();
-            buttonImpCrucero = new Button();
-            label3 = new Label();
-            textBox4 = new TextBox();
             groupBoxServHotel = new GroupBox();
             listView3 = new ListView();
             columnHeader15 = new ColumnHeader();
@@ -70,27 +58,13 @@
             buttonImpHotel = new Button();
             label4 = new Label();
             textBox5 = new TextBox();
-            groupBoxPaqTur = new GroupBox();
-            listView4 = new ListView();
-            columnHeader24 = new ColumnHeader();
-            columnHeader25 = new ColumnHeader();
-            columnHeader26 = new ColumnHeader();
-            columnHeader27 = new ColumnHeader();
-            columnHeader28 = new ColumnHeader();
-            columnHeader29 = new ColumnHeader();
-            columnHeader31 = new ColumnHeader();
-            buttonImpPaquete = new Button();
-            label5 = new Label();
-            textBox6 = new TextBox();
             buttonGenerarPreRese = new Button();
             buttonGuardarIti = new Button();
             buttonVolverAtras = new Button();
             label6 = new Label();
             textBox7 = new TextBox();
             groupBoxServAereo.SuspendLayout();
-            groupBoxServCruc.SuspendLayout();
             groupBoxServHotel.SuspendLayout();
-            groupBoxPaqTur.SuspendLayout();
             SuspendLayout();
             // 
             // labelNumIti
@@ -217,99 +191,13 @@
             columnHeader8.Text = "Tarifa";
             columnHeader8.Width = 90;
             // 
-            // groupBoxServCruc
-            // 
-            groupBoxServCruc.Controls.Add(listView2);
-            groupBoxServCruc.Controls.Add(buttonImpCrucero);
-            groupBoxServCruc.Controls.Add(label3);
-            groupBoxServCruc.Controls.Add(textBox4);
-            groupBoxServCruc.Location = new Point(17, 210);
-            groupBoxServCruc.Name = "groupBoxServCruc";
-            groupBoxServCruc.Size = new Size(1071, 147);
-            groupBoxServCruc.TabIndex = 5;
-            groupBoxServCruc.TabStop = false;
-            groupBoxServCruc.Text = "Servicios Crucero";
-            // 
-            // listView2
-            // 
-            listView2.Columns.AddRange(new ColumnHeader[] { columnHeader9, columnHeader10, columnHeader11, columnHeader12, columnHeader13, columnHeader14, columnHeader16 });
-            listView2.Font = new Font("Calibri Light", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            listView2.Location = new Point(25, 54);
-            listView2.Name = "listView2";
-            listView2.Size = new Size(805, 81);
-            listView2.TabIndex = 8;
-            listView2.UseCompatibleStateImageBehavior = false;
-            listView2.View = View.Details;
-            // 
-            // columnHeader9
-            // 
-            columnHeader9.Text = "Crucero";
-            columnHeader9.Width = 90;
-            // 
-            // columnHeader10
-            // 
-            columnHeader10.Text = "Origen";
-            columnHeader10.Width = 90;
-            // 
-            // columnHeader11
-            // 
-            columnHeader11.Text = "Destino";
-            columnHeader11.Width = 90;
-            // 
-            // columnHeader12
-            // 
-            columnHeader12.Text = "Salida";
-            columnHeader12.Width = 90;
-            // 
-            // columnHeader13
-            // 
-            columnHeader13.Text = "Llegada";
-            columnHeader13.Width = 90;
-            // 
-            // columnHeader14
-            // 
-            columnHeader14.Text = "Camarote";
-            columnHeader14.Width = 100;
-            // 
-            // columnHeader16
-            // 
-            columnHeader16.Text = "Tarifa";
-            columnHeader16.Width = 90;
-            // 
-            // buttonImpCrucero
-            // 
-            buttonImpCrucero.Font = new Font("Book Antiqua", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            buttonImpCrucero.Location = new Point(875, 99);
-            buttonImpCrucero.Name = "buttonImpCrucero";
-            buttonImpCrucero.Size = new Size(190, 42);
-            buttonImpCrucero.TabIndex = 10;
-            buttonImpCrucero.Text = "Impuesto Crucero";
-            buttonImpCrucero.UseVisualStyleBackColor = true;
-            buttonImpCrucero.Click += buttonImpCrucero_Click;
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Location = new Point(873, 26);
-            label3.Name = "label3";
-            label3.Size = new Size(52, 15);
-            label3.TabIndex = 8;
-            label3.Text = "Subtotal";
-            // 
-            // textBox4
-            // 
-            textBox4.Location = new Point(873, 54);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(183, 24);
-            textBox4.TabIndex = 9;
-            // 
             // groupBoxServHotel
             // 
             groupBoxServHotel.Controls.Add(listView3);
             groupBoxServHotel.Controls.Add(buttonImpHotel);
             groupBoxServHotel.Controls.Add(label4);
             groupBoxServHotel.Controls.Add(textBox5);
-            groupBoxServHotel.Location = new Point(17, 373);
+            groupBoxServHotel.Location = new Point(17, 224);
             groupBoxServHotel.Name = "groupBoxServHotel";
             groupBoxServHotel.Size = new Size(1071, 147);
             groupBoxServHotel.TabIndex = 5;
@@ -393,94 +281,9 @@
             textBox5.Size = new Size(183, 24);
             textBox5.TabIndex = 12;
             // 
-            // groupBoxPaqTur
-            // 
-            groupBoxPaqTur.Controls.Add(listView4);
-            groupBoxPaqTur.Controls.Add(buttonImpPaquete);
-            groupBoxPaqTur.Controls.Add(label5);
-            groupBoxPaqTur.Controls.Add(textBox6);
-            groupBoxPaqTur.Location = new Point(17, 539);
-            groupBoxPaqTur.Name = "groupBoxPaqTur";
-            groupBoxPaqTur.Size = new Size(1071, 147);
-            groupBoxPaqTur.TabIndex = 5;
-            groupBoxPaqTur.TabStop = false;
-            groupBoxPaqTur.Text = "Paquete Turístico";
-            // 
-            // listView4
-            // 
-            listView4.Columns.AddRange(new ColumnHeader[] { columnHeader24, columnHeader25, columnHeader26, columnHeader27, columnHeader28, columnHeader29, columnHeader31 });
-            listView4.Font = new Font("Calibri Light", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            listView4.Location = new Point(23, 44);
-            listView4.Name = "listView4";
-            listView4.Size = new Size(805, 81);
-            listView4.TabIndex = 14;
-            listView4.UseCompatibleStateImageBehavior = false;
-            listView4.View = View.Details;
-            // 
-            // columnHeader24
-            // 
-            columnHeader24.Text = "Código";
-            columnHeader24.Width = 70;
-            // 
-            // columnHeader25
-            // 
-            columnHeader25.Text = "Nombre";
-            columnHeader25.Width = 110;
-            // 
-            // columnHeader26
-            // 
-            columnHeader26.Text = "Origen";
-            columnHeader26.Width = 110;
-            // 
-            // columnHeader27
-            // 
-            columnHeader27.Text = "Destino";
-            columnHeader27.Width = 100;
-            // 
-            // columnHeader28
-            // 
-            columnHeader28.Text = "Fecha Inicio";
-            columnHeader28.Width = 110;
-            // 
-            // columnHeader29
-            // 
-            columnHeader29.Text = "Fecha Fin";
-            columnHeader29.Width = 110;
-            // 
-            // columnHeader31
-            // 
-            columnHeader31.Text = "Tarifa";
-            // 
-            // buttonImpPaquete
-            // 
-            buttonImpPaquete.Font = new Font("Book Antiqua", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            buttonImpPaquete.Location = new Point(875, 99);
-            buttonImpPaquete.Name = "buttonImpPaquete";
-            buttonImpPaquete.Size = new Size(190, 42);
-            buttonImpPaquete.TabIndex = 16;
-            buttonImpPaquete.Text = "Impuesto Paquete";
-            buttonImpPaquete.UseVisualStyleBackColor = true;
-            buttonImpPaquete.Click += buttonImpPaquete_Click;
-            // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.Location = new Point(873, 26);
-            label5.Name = "label5";
-            label5.Size = new Size(52, 15);
-            label5.TabIndex = 14;
-            label5.Text = "Subtotal";
-            // 
-            // textBox6
-            // 
-            textBox6.Location = new Point(873, 54);
-            textBox6.Name = "textBox6";
-            textBox6.Size = new Size(183, 24);
-            textBox6.TabIndex = 15;
-            // 
             // buttonGenerarPreRese
             // 
-            buttonGenerarPreRese.Location = new Point(66, 722);
+            buttonGenerarPreRese.Location = new Point(35, 399);
             buttonGenerarPreRese.Name = "buttonGenerarPreRese";
             buttonGenerarPreRese.Size = new Size(206, 62);
             buttonGenerarPreRese.TabIndex = 6;
@@ -490,7 +293,7 @@
             // 
             // buttonGuardarIti
             // 
-            buttonGuardarIti.Location = new Point(316, 722);
+            buttonGuardarIti.Location = new Point(285, 399);
             buttonGuardarIti.Name = "buttonGuardarIti";
             buttonGuardarIti.Size = new Size(206, 62);
             buttonGuardarIti.TabIndex = 7;
@@ -499,7 +302,7 @@
             // 
             // buttonVolverAtras
             // 
-            buttonVolverAtras.Location = new Point(560, 722);
+            buttonVolverAtras.Location = new Point(529, 399);
             buttonVolverAtras.Name = "buttonVolverAtras";
             buttonVolverAtras.Size = new Size(206, 62);
             buttonVolverAtras.TabIndex = 8;
@@ -510,7 +313,7 @@
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(892, 724);
+            label6.Location = new Point(861, 401);
             label6.Name = "label6";
             label6.Size = new Size(125, 15);
             label6.TabIndex = 17;
@@ -518,7 +321,7 @@
             // 
             // textBox7
             // 
-            textBox7.Location = new Point(892, 752);
+            textBox7.Location = new Point(861, 429);
             textBox7.Name = "textBox7";
             textBox7.Size = new Size(183, 24);
             textBox7.TabIndex = 18;
@@ -528,15 +331,13 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.Info;
-            ClientSize = new Size(1110, 813);
+            ClientSize = new Size(1099, 494);
             Controls.Add(label6);
             Controls.Add(buttonVolverAtras);
             Controls.Add(textBox7);
             Controls.Add(buttonGuardarIti);
             Controls.Add(buttonGenerarPreRese);
-            Controls.Add(groupBoxPaqTur);
             Controls.Add(groupBoxServHotel);
-            Controls.Add(groupBoxServCruc);
             Controls.Add(groupBoxServAereo);
             Controls.Add(textBox2);
             Controls.Add(label1);
@@ -547,12 +348,8 @@
             Text = "Armado Itinerario";
             groupBoxServAereo.ResumeLayout(false);
             groupBoxServAereo.PerformLayout();
-            groupBoxServCruc.ResumeLayout(false);
-            groupBoxServCruc.PerformLayout();
             groupBoxServHotel.ResumeLayout(false);
             groupBoxServHotel.PerformLayout();
-            groupBoxPaqTur.ResumeLayout(false);
-            groupBoxPaqTur.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -567,9 +364,7 @@
         private Label label2;
         private TextBox textBox3;
         private ListView listView1;
-        private GroupBox groupBoxServCruc;
         private GroupBox groupBoxServHotel;
-        private GroupBox groupBoxPaqTur;
         private Button buttonImpAereo;
         private ColumnHeader columnHeader1;
         private ColumnHeader columnHeader2;
@@ -579,17 +374,6 @@
         private ColumnHeader columnHeader6;
         private ColumnHeader columnHeader7;
         private ColumnHeader columnHeader8;
-        private ListView listView2;
-        private ColumnHeader columnHeader9;
-        private ColumnHeader columnHeader10;
-        private ColumnHeader columnHeader11;
-        private ColumnHeader columnHeader12;
-        private ColumnHeader columnHeader13;
-        private ColumnHeader columnHeader14;
-        private ColumnHeader columnHeader16;
-        private Button buttonImpCrucero;
-        private Label label3;
-        private TextBox textBox4;
         private ListView listView3;
         private ColumnHeader columnHeader15;
         private ColumnHeader columnHeader17;
@@ -601,18 +385,7 @@
         private Button buttonImpHotel;
         private Label label4;
         private TextBox textBox5;
-        private Button buttonImpPaquete;
-        private Label label5;
-        private TextBox textBox6;
         private ColumnHeader columnHeader23;
-        private ListView listView4;
-        private ColumnHeader columnHeader24;
-        private ColumnHeader columnHeader25;
-        private ColumnHeader columnHeader26;
-        private ColumnHeader columnHeader27;
-        private ColumnHeader columnHeader28;
-        private ColumnHeader columnHeader29;
-        private ColumnHeader columnHeader31;
         private Button buttonGenerarPreRese;
         private Button buttonGuardarIti;
         private Button buttonVolverAtras;

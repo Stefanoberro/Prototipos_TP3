@@ -55,5 +55,10 @@ namespace AgenciaViajes_Prototipo_G5
             GuardarOpcion guardarOpcion = new GuardarOpcion();
             guardarOpcion.Show();
         }
+
+        private void listView2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

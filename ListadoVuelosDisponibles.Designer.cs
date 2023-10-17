@@ -29,7 +29,8 @@
         private void InitializeComponent()
         {
             ListViewItem listViewItem1 = new ListViewItem("Buenos Aires");
-            ListViewItem listViewItem2 = new ListViewItem("Medellín");
+            ListViewItem listViewItem2 = new ListViewItem("Mendoza");
+            ListViewItem listViewItem3 = new ListViewItem("$100.000,00");
             label1 = new Label();
             checkedListBox1 = new CheckedListBox();
             label2 = new Label();
@@ -58,7 +59,7 @@
             // checkedListBox1
             // 
             checkedListBox1.FormattingEnabled = true;
-            checkedListBox1.Items.AddRange(new object[] { "AF30     | JETSMART     | BUE        | MED       | 0         | 20/10/2023      | 25/10/2023      | 3 Hs      | RR502    | $100000" });
+            checkedListBox1.Items.AddRange(new object[] { "AF30     | JETSMART     | BUE        | MDZ       | 0         | 20/10/2023      | 25/10/2023      | 3 Hs      | RR502    | $100000" });
             checkedListBox1.Location = new Point(12, 72);
             checkedListBox1.Name = "checkedListBox1";
             checkedListBox1.Size = new Size(773, 40);
@@ -110,6 +111,7 @@
             listView2.Size = new Size(121, 44);
             listView2.TabIndex = 6;
             listView2.UseCompatibleStateImageBehavior = false;
+            listView2.SelectedIndexChanged += listView2_SelectedIndexChanged;
             // 
             // button1
             // 
@@ -152,6 +154,7 @@
             // 
             // listView3
             // 
+            listView3.Items.AddRange(new ListViewItem[] { listViewItem3 });
             listView3.Location = new Point(99, 370);
             listView3.Name = "listView3";
             listView3.Size = new Size(121, 36);

@@ -16,6 +16,7 @@ namespace AgenciaViajes_Prototipo_G5
         {
             InitializeComponent();
             dateTimePickerIda.MinDate = DateTime.Now;
+            dateTimePicker1.MinDate = DateTime.Now;
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -33,10 +34,10 @@ namespace AgenciaViajes_Prototipo_G5
 
         }
 
-        private void seleccionarButton_Click(object sender, EventArgs e)
+        private void hotelesButton_Click(object sender, EventArgs e)
         {
-            ListadoVuelosDisponibles formListadoVuelosDisponibles = new ListadoVuelosDisponibles();
-            formListadoVuelosDisponibles.Show();
+            ListadoOfertaHoteleria formListadoOfertaHoteleria = new ListadoOfertaHoteleria();
+            formListadoOfertaHoteleria.Show();
         }
 
         private void buttonVerPaquetesTuristicos_Click(object sender, EventArgs e)
@@ -48,6 +49,17 @@ namespace AgenciaViajes_Prototipo_G5
         private void buttonBackMenu_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void vuelosButton_Click(object sender, EventArgs e)
+        {
+            ListadoVuelosDisponibles formListadoVuelosDisponibles = new ListadoVuelosDisponibles();
+            formListadoVuelosDisponibles.Show();
+        }
+
+        private void comboBox5_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

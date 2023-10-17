@@ -28,48 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            listView1 = new ListView();
-            columnHeaderNumIti = new ColumnHeader();
-            columnHeaderNomCliente = new ColumnHeader();
-            columnHeaderFechaInicioIti = new ColumnHeader();
-            columnHeaderConfirmIti = new ColumnHeader();
             buttonCrearItinNuevo = new Button();
             buttonVerItinPresup = new Button();
             buttonVolverAtras = new Button();
             buttonGenerarPreReserva = new Button();
+            listBox1 = new ListBox();
+            label2 = new Label();
             SuspendLayout();
-            // 
-            // listView1
-            // 
-            listView1.Columns.AddRange(new ColumnHeader[] { columnHeaderNumIti, columnHeaderNomCliente, columnHeaderFechaInicioIti, columnHeaderConfirmIti });
-            listView1.Location = new Point(35, 15);
-            listView1.Margin = new Padding(2);
-            listView1.Name = "listView1";
-            listView1.Size = new Size(512, 122);
-            listView1.TabIndex = 0;
-            listView1.UseCompatibleStateImageBehavior = false;
-            listView1.View = View.Details;
-            // 
-            // columnHeaderNumIti
-            // 
-            columnHeaderNumIti.Text = "Número Itinerario";
-            columnHeaderNumIti.Width = 160;
-            // 
-            // columnHeaderNomCliente
-            // 
-            columnHeaderNomCliente.Text = "Nombre Cliente";
-            columnHeaderNomCliente.TextAlign = HorizontalAlignment.Center;
-            columnHeaderNomCliente.Width = 180;
-            // 
-            // columnHeaderFechaInicioIti
-            // 
-            columnHeaderFechaInicioIti.Text = "Fecha Inicio Itinerario";
-            columnHeaderFechaInicioIti.Width = 180;
-            // 
-            // columnHeaderConfirmIti
-            // 
-            columnHeaderConfirmIti.Text = "Confirmación Itinerario";
-            columnHeaderConfirmIti.Width = 200;
             // 
             // buttonCrearItinNuevo
             // 
@@ -115,32 +80,49 @@
             buttonGenerarPreReserva.UseVisualStyleBackColor = true;
             buttonGenerarPreReserva.Click += buttonGenerarPreReserva_Click;
             // 
+            // listBox1
+            // 
+            listBox1.FormattingEnabled = true;
+            listBox1.ItemHeight = 15;
+            listBox1.Items.AddRange(new object[] { "IT001 || Juan Perez || 22/11/2023" });
+            listBox1.Location = new Point(42, 62);
+            listBox1.Name = "listBox1";
+            listBox1.Size = new Size(346, 79);
+            listBox1.TabIndex = 6;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(42, 33);
+            label2.Name = "label2";
+            label2.Size = new Size(339, 15);
+            label2.TabIndex = 5;
+            label2.Text = "Número de itinerario      ||        Nombre Cliente        ||         Inicio del itinerario         ||";
+            // 
             // ListadoItinerario
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(588, 270);
+            Controls.Add(listBox1);
+            Controls.Add(label2);
             Controls.Add(buttonGenerarPreReserva);
             Controls.Add(buttonVolverAtras);
             Controls.Add(buttonVerItinPresup);
             Controls.Add(buttonCrearItinNuevo);
-            Controls.Add(listView1);
             Margin = new Padding(2);
             Name = "ListadoItinerario";
             Text = "Listado de itinerarios";
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
-
-        private ListView listView1;
-        private ColumnHeader columnHeaderNumIti;
-        private ColumnHeader columnHeaderNomCliente;
-        private ColumnHeader columnHeaderFechaInicioIti;
-        private ColumnHeader columnHeaderConfirmIti;
         private Button buttonCrearItinNuevo;
         private Button buttonVerItinPresup;
         private Button buttonVolverAtras;
         private Button buttonGenerarPreReserva;
+        private ListBox listBox1;
+        private Label label2;
     }
 }
