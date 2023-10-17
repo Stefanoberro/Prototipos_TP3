@@ -55,6 +55,10 @@
             label13 = new Label();
             label14 = new Label();
             vuelosButton = new Button();
+            label16 = new Label();
+            textBox1 = new TextBox();
+            button1 = new Button();
+            button3 = new Button();
             SuspendLayout();
             // 
             // label1
@@ -218,9 +222,9 @@
             // 
             // button2
             // 
-            button2.Location = new Point(586, 343);
+            button2.Location = new Point(547, 449);
             button2.Name = "button2";
-            button2.Size = new Size(112, 79);
+            button2.Size = new Size(176, 38);
             button2.TabIndex = 26;
             button2.Text = "Regresar a Menú Principal";
             button2.UseVisualStyleBackColor = true;
@@ -311,11 +315,51 @@
             vuelosButton.UseVisualStyleBackColor = true;
             vuelosButton.Click += vuelosButton_Click;
             // 
+            // label16
+            // 
+            label16.AutoSize = true;
+            label16.Location = new Point(561, 48);
+            label16.Name = "label16";
+            label16.Size = new Size(105, 15);
+            label16.TabIndex = 37;
+            label16.Text = "Nombre y apellido";
+            // 
+            // textBox1
+            // 
+            textBox1.Location = new Point(527, 69);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(171, 23);
+            textBox1.TabIndex = 38;
+            // 
+            // button1
+            // 
+            button1.Location = new Point(365, 449);
+            button1.Name = "button1";
+            button1.Size = new Size(176, 38);
+            button1.TabIndex = 39;
+            button1.Text = "Generar Pre-reserva";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
+            // button3
+            // 
+            button3.Location = new Point(183, 449);
+            button3.Name = "button3";
+            button3.Size = new Size(176, 38);
+            button3.TabIndex = 40;
+            button3.Text = "Ver presupuesto";
+            button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
+            // 
             // ConsultaDeDisponibilidadProductos
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(749, 463);
+            ClientSize = new Size(751, 520);
+            Controls.Add(button3);
+            Controls.Add(button1);
+            Controls.Add(textBox1);
+            Controls.Add(label16);
             Controls.Add(vuelosButton);
             Controls.Add(comboBox6);
             Controls.Add(comboBox7);
@@ -378,5 +422,9 @@
         private Label label13;
         private Label label14;
         private Button vuelosButton;
+        private Label label16;
+        private TextBox textBox1;
+        private Button button1;
+        private Button button3;
     }
 }

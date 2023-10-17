@@ -61,5 +61,17 @@ namespace AgenciaViajes_Prototipo_G5
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            GeneracionPreReservaPersonas generacionPreReserva = new GeneracionPreReservaPersonas();
+            generacionPreReserva.Show();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            FormArmadoItinerario armadoItinerario = new FormArmadoItinerario();
+            armadoItinerario.Show();
+        }
     }
 }
